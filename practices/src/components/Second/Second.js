@@ -185,15 +185,15 @@ export const Second = () => {
             {renderContent(splittedArr)}
 
             <h1>
-                1.1 Згідно теорії(для методу моментів і вибірки більше 30) &alpha; дорівнює математичному сподіванню, а &sigma; дорівнює кореню квадратному з дисперісії
+                1.1 Згідно теорії, для методу моментів і вибірки більше 30 &alpha; дорівнює математичному сподіванню, а &sigma; дорівнює кореню квадратному з дисперсії
                 <br />
-                &alpha; = {a}
+                &alpha; = {a.toFixed(2)}
                 <br />
-                &sigma; = {f}
+                &sigma; = {f.toFixed(2)}
             </h1>
 
             <h1>
-                1.2 Згідно теорії для точкової оцінки параметрів розподілу для нормально розподіленої величини
+                1.2 Згідно теорії, для точкової оцінки параметрів розподілу для нормально розподіленої величини
                 формули для розрахунку є ідентичними з 1.1
             </h1>
 
@@ -202,29 +202,7 @@ export const Second = () => {
             </h1>
 
             <h1>
-                3.1 Середньоквадратичне відхилення
-            </h1>
-            <LineChart
-                width={1200}
-                height={300}
-                data={dispersion}
-                margin={{
-                    top: 5,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Line dataKey="dispersion" stroke="#8884d8" activeDot={{ r: 8 }} />
-            </LineChart>
-
-            <h1>
-                3.2 математичне очікування
+                3.1 математичне очікування
             </h1>
             <LineChart
                 width={1200}
@@ -243,6 +221,28 @@ export const Second = () => {
                 <Tooltip />
                 <Legend />
                 <Line dataKey="a" stroke="#8884d8" activeDot={{ r: 8 }} />
+            </LineChart>
+
+            <h1>
+                3.2 Середньоквадратичне відхилення
+            </h1>
+            <LineChart
+                width={1200}
+                height={300}
+                data={dispersion}
+                margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                }}
+            >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Line dataKey="dispersion" stroke="#8884d8" activeDot={{ r: 8 }} />
             </LineChart>
         </>
     );
