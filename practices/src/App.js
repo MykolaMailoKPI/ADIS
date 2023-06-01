@@ -8,7 +8,14 @@ import { Layout } from './components/Layout'
 function App() {
   return (
     <div className="App">
-        <Second />
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Reimplement />} />
+                    <Route path="second" element={<Second />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     </div>
   );
 }
