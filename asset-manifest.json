@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ADIS/static/css/main.8e71d338.css",
-    "main.js": "/ADIS/static/js/main.771f7db8.js",
+    "main.js": "/ADIS/static/js/main.fb8bfce1.js",
     "static/js/787.e9740de8.chunk.js": "/ADIS/static/js/787.e9740de8.chunk.js",
     "index.html": "/ADIS/index.html",
     "main.8e71d338.css.map": "/ADIS/static/css/main.8e71d338.css.map",
-    "main.771f7db8.js.map": "/ADIS/static/js/main.771f7db8.js.map",
+    "main.fb8bfce1.js.map": "/ADIS/static/js/main.fb8bfce1.js.map",
     "787.e9740de8.chunk.js.map": "/ADIS/static/js/787.e9740de8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e71d338.css",
-    "static/js/main.771f7db8.js"
+    "static/js/main.fb8bfce1.js"
   ]
 }
